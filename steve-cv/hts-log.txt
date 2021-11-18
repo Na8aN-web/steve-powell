@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 14 Aug 2021 02:10:23 at https://watson-vcard.netlify.app/index-dark-particles2.html#about +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://watson-vcard.netlify.app/index-dark-particles2.html#about -O1 "C:\Users\Golden\Documents\Template\Great12" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+02:11:38	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/robots.txt (from primary/primary)
+02:11:38	Warning: 	Retry after error -5 (Unable to get server's address: No such host is known. ) at link primary/about (from primary/primary)
+02:12:01	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link primary/about (from primary/primary)
+02:12:34	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link primary/about (from primary/primary)
+02:12:35	Error: 	"Not Found" (404) at link https://watson-vcard.netlify.app/css/plugins/owl.video.play.png (from https://watson-vcard.netlify.app/css/plugins/owl.carousel.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 12 seconds : 99 links scanned, 93 files written (6277987 bytes overall) [4142245 bytes received at 31380 bytes/sec], 3482729 bytes transferred using HTTP compression in 44 files, ratio 37%
+(3 errors, 2 warnings, 0 messages)

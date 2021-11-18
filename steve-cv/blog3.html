@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-random-animation="false" data-animation="36">
+    
+<!-- Mirrored from watson-vcard.netlify.app/blog-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Aug 2021 00:11:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="vcard, resume, personal, portfolio, cv, card, responsive" />
+        <meta name="description" content="vCard / Resume / Personal / Portfolio Template" />
+        <meta name="author" content="cosmos-themes" />
+
+        <!--Page Title-->
+        <title>Steve Powell</title>
+
+        <!--Plugins Css-->
+        <link rel="stylesheet" href="css/plugins.css">
+        <!--Main Styles Css-->
+        <link rel="stylesheet" href="css/style-dark.css">
+        <!--Color Css-->
+        <link rel="stylesheet" href="css/blue-color.css">
+
+        <!--Modernizr Js-->
+        <script src="js/modernizr.js"></script>
+
+        <!--Favicons-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122650090-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-122650090-3');
+        </script>
+
+    </head>
+
+    <body>
+
+        <!--Preloader Start-->
+        <div class="preloader">
+            <div class="loader">
+                <!--Your Name-->
+                <h4>Steve Powell</h4>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+
+        <div id="page">
+
+
+            <!--Header Start-->
+            <header>
+                <div class="header-content">
+
+                    <!--Mobile Header-->
+                    <div class="header-mobile">
+                        <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                        <h2>Steve Powell</h2>
+                    </div>
+
+                    <!--Main Header-->
+                    <div class="header-main" data-simplebar>
+                        <div class="image-container">
+                            <h2 class="header-name">Steve Powell</h2>
+                            <img src="img/steve_powell.png" alt="profile-pic">
+                        </div>
+
+                        <!--Nav Menus-->
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="index-dark-particles2.html#home"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                                <li><a href="index-dark-particles2.html#about"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                                <li><a href="index-dark-particles2.html#resume"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
+                                <li><a href="index-dark-particles2.html#portfolio"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                                <li><a href="index-dark-particles2.html#blog" class="active"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
+                                <li><a href="index-dark-particles2.html#contact"><span class="nav-menu-icon"><i class="lnr lnr-envelope"></i></span>Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <!--Nav Footer-->
+                        <div class="nav-footer">
+                            <!--Social Links-->
+                          
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <!--Header End-->
+
+
+            <!--Main Start-->
+            <div id="main" class="site-main">
+
+                <div class="blog-page">
+                    <div class="blog-image">
+                        <img src="img/blog/inner3.png" alt="">
+                    </div>
+                    <div class="blog-container">
+                        <div class="row">
+
+                            <!--Blog Heading Start-->
+                            <div class="blog-heading col-md-8 offset-md-2">
+                               
+                                <h1>Why Promise.all() is not always a suitable solution. ⚡💡</h1>
+                                <span class="blog-date">April 15, 2020</span>
+                            </div>
+                            <!--Blog Heading Start-->
+
+                            <!--Blog Content Start-->
+                            <div class="blog-content col-md-10 offset-md-1">
+                                <h2>
+                                    <a name="background" href="#background">
+                                    </a>
+                                    Background
+                                  </h2>
+                                  
+                                  <p>Here at Stillio, it's paramount that we take care of the code we write. We process thousands of images and people rely on us for making sure their screenshots get delivered.</p>
+                                  
+                                  <p>Recently, we found something that might be interesting about <code>Promise.all()</code>.</p>
+                                  
+                                  <h2>
+                                    <a name="what-is-promiseall" href="#what-is-promiseall">
+                                    </a>
+                                    What is Promise.all?
+                                  </h2>
+                                  
+                                  <p>The .all method on the Promise object is a neat way to process a list of asynchronous actions in order and receive an Array of results. e.g.<br>
+                                  </p>
+                                  
+                                  <div class="highlight js-code-highlight">
+                                  <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">promises</span> <span class="o">=</span> <span class="p">[</span><span class="nx">Promise1</span><span class="p">,</span> <span class="nx">Promise2</span><span class="p">,</span> <span class="nx">Promise3</span><span class="p">...]</span>
+                                  <span class="kd">const</span> <span class="nx">results</span> <span class="o">=</span> <span class="k">await</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">promises</span><span class="p">)</span>
+                                  
+                                  <span class="c1">// results: [Promise1Result, Promise2Result, Promise3Result...]</span>
+                                  </code></pre>
+                                  <div class="highlight__panel js-actions-panel">
+                                  <div class="highlight__panel-action js-fullscreen-code-action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                      <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                  </svg>
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                      <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                  </svg>
+                                  
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <p>A handy feature of Promise.all is that it will give back the results in the order that the promise array was given, let's look at a more robust example:<br>
+                                  </p>
+                                  
+                                  <div class="highlight js-code-highlight">
+                                  <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">urlArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">];</span>
+                                  
+                                  <span class="kd">function</span> <span class="nx">asyncAction</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                      <span class="nx">setTimeout</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">index</span><span class="p">),</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">5000</span><span class="p">);</span>
+                                    <span class="p">});</span>
+                                  <span class="p">}</span>
+                                  
+                                  <span class="kd">const</span> <span class="nx">promises</span> <span class="o">=</span> <span class="nx">urlArray</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">asyncAction</span><span class="p">(</span><span class="nx">num</span><span class="p">));</span>
+                                  
+                                  <span class="k">async</span> <span class="kd">function</span> <span class="nx">start</span><span class="p">()</span> <span class="p">{</span>
+                                    <span class="kd">const</span> <span class="nx">results</span> <span class="o">=</span> <span class="k">await</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">promises</span><span class="p">);</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Results: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">results</span><span class="p">);</span>
+                                  <span class="p">}</span>
+                                  
+                                  <span class="nx">start</span><span class="p">();</span>
+                                  </code></pre>
+                                  <div class="highlight__panel js-actions-panel">
+                                  <div class="highlight__panel-action js-fullscreen-code-action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                      <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                  </svg>
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                      <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                  </svg>
+                                  
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <h2>
+                                    <a name="description" href="#description">
+                                    </a>
+                                    Description
+                                  </h2>
+                                  
+                                  <p>Above we have a fake <code>urlArray</code> variable. Assume that this is actual urls that we want to fetch. Since fetching is an async event we simulate that with the function <code>asyncAction</code>.</p>
+                                  
+                                  <p>All <code>asyncAction</code> actually does is return a promise which resolves at a random interval between 0 and 5000ms. This is to simulate changes in network latency, not all requests respond in the exact same time.</p>
+                                  
+                                  <p>To create an Array of Promises, we map the <code>urlArray</code> and return a new Array with the Promises after calling <code>asyncAction</code>. These aren't resolved yet, so we use Promise.all() in <code>start()</code> to give us an Array of results and since the function just returns the number:<br>
+                                  </p>
+                                  
+                                  <div class="highlight js-code-highlight">
+                                  <pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Results: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">results</span><span class="p">);</span> <span class="c1">// Results: [1, 2, 3, 4,  5, 6,  7, 8, 9, 10, 11, 12]</span>
+                                  </code></pre>
+                                  <div class="highlight__panel js-actions-panel">
+                                  <div class="highlight__panel-action js-fullscreen-code-action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                      <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                  </svg>
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                      <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                  </svg>
+                                  
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <p>The results demonstrate that even though each request took a considerable different amount of time to complete, the Promise.all() method made sure that the results were returned in the correct order, hooray there's reliability! Or is there...</p>
+                                  
+                                  <h2>
+                                    <a name="where-promiseall-gets-interesting" href="#where-promiseall-gets-interesting">
+                                    </a>
+                                    Where Promise.all() gets interesting
+                                  </h2>
+                                  
+                                  <p>Let's look at the above example again, but this time we change some things up. In the fake request let's update the resolve function to this:<br>
+                                  </p>
+                                  
+                                  <div class="highlight js-code-highlight">
+                                  <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">asyncAction</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                      <span class="nx">setTimeout</span><span class="p">(</span>
+                                        <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">index</span><span class="p">}</span><span class="s2">: </span><span class="p">${</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">toISOString</span><span class="p">()}</span><span class="s2">`</span><span class="p">),</span>
+                                        <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">5000</span>
+                                      <span class="p">);</span>
+                                    <span class="p">});</span>
+                                  <span class="p">}</span>
+                                  </code></pre>
+                                  <div class="highlight__panel js-actions-panel">
+                                  <div class="highlight__panel-action js-fullscreen-code-action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                      <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                  </svg>
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                      <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                  </svg>
+                                  
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <p>We've added a date component to the result of the Promise. This is actually something that we required in our code base. We had to process multiple URLs in an Array asynchronously and give it a timestamp that was congruent to the order of the Array. Sounds like the perfect job for Promise.all().</p>
+                                  
+                                  <p>Let's run the code again with the timestamp component included, here's the result:<br>
+                                  </p>
+                                  
+                                  <div class="highlight js-code-highlight">
+                                  <pre class="highlight plaintext"><code>Results:  [
+                                    '1: 2021-04-15T07:55:28.315Z',
+                                    '2: 2021-04-15T07:55:27.586Z',
+                                    '3: 2021-04-15T07:55:30.063Z',
+                                    '4: 2021-04-15T07:55:30.707Z',
+                                    '5: 2021-04-15T07:55:28.549Z',
+                                    '6: 2021-04-15T07:55:30.284Z',
+                                    '7: 2021-04-15T07:55:27.231Z',
+                                    '8: 2021-04-15T07:55:29.844Z',
+                                    '9: 2021-04-15T07:55:26.287Z',
+                                    '10: 2021-04-15T07:55:27.308Z',
+                                    '11: 2021-04-15T07:55:28.798Z',
+                                    '12: 2021-04-15T07:55:30.978Z'
+                                  ]
+                                  </code></pre>
+                                  <div class="highlight__panel js-actions-panel">
+                                  <div class="highlight__panel-action js-fullscreen-code-action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                      <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                  </svg>
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                      <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                  </svg>
+                                  
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <p>As you can see, Item 10 was created ~1s before item 1 was created. Even though the method maintained the order of the Promise resolutions, there was this effect that timestamps were dependent on these random intervals.</p>
+                                  
+                                  <p>This makes sense if you think about it, because fundamentally the issue already arose in the loop - when generating the promises. The loop doesn't wait for the previous promise to arrive for the next one to be made - it's still just a Promise.</p>
+                                  
+                                  <h2>
+                                    <a name="the-alternative-approach" href="#the-alternative-approach">
+                                    </a>
+                                    The alternative approach
+                                  </h2>
+                                  
+                                  
+                                  
+                                  <div class="highlight js-code-highlight">
+                                  <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">urlArray</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">];</span>
+                                  
+                                  <span class="kd">function</span> <span class="nx">asyncAction</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                      <span class="nx">setTimeout</span><span class="p">(</span>
+                                        <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">index</span><span class="p">}</span><span class="s2">: </span><span class="p">${</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">toISOString</span><span class="p">()}</span><span class="s2">`</span><span class="p">),</span>
+                                        <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">5000</span>
+                                      <span class="p">);</span>
+                                    <span class="p">});</span>
+                                  <span class="p">}</span>
+                                  
+                                  <span class="k">async</span> <span class="kd">function</span> <span class="nx">start</span><span class="p">()</span> <span class="p">{</span>
+                                    <span class="kd">let</span> <span class="nx">results</span> <span class="o">=</span> <span class="p">[];</span>
+                                  
+                                    <span class="k">for</span> <span class="p">(</span><span class="nx">url</span> <span class="k">of</span> <span class="nx">urlArray</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="nx">results</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">await</span> <span class="nx">asyncAction</span><span class="p">(</span><span class="nx">url</span><span class="p">));</span>
+                                    <span class="p">}</span>
+                                  
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">results</span><span class="p">);</span>
+                                  <span class="p">}</span>
+                                  
+                                  <span class="nx">start</span><span class="p">();</span>
+                                  </code></pre>
+                                  <div class="highlight__panel js-actions-panel">
+                                  <div class="highlight__panel-action js-fullscreen-code-action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                      <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                  </svg>
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                      <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                  </svg>
+                                  
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <p>The code above is very similar, except we've removed promise.all() and replaced it with a simple <code>for of</code> loop. On each iteration, we HAVE to wait for the previous result, because of <code>await</code>. The outcome is:<br>
+                                  </p>
+                                  
+                                  <div class="highlight js-code-highlight">
+                                  <pre class="highlight plaintext"><code>[
+                                    '0: 2021-04-15T08:12:13.026Z', 
+                                    '1: 2021-04-15T08:12:17.042Z', 
+                                    '2: 2021-04-15T08:12:21.314Z', 
+                                    '3: 2021-04-15T08:12:21.600Z', 
+                                    '4: 2021-04-15T08:12:22.984Z', 
+                                    '5: 2021-04-15T08:12:27.061Z', 
+                                    '6: 2021-04-15T08:12:28.771Z', 
+                                    '7: 2021-04-15T08:12:30.432Z', 
+                                    '8: 2021-04-15T08:12:31.530Z', 
+                                    '9: 2021-04-15T08:12:35.691Z', 
+                                    '10: 2021-04-15T08:12:40.394Z',
+                                    '11: 2021-04-15T08:12:41.410Z'
+                                  ]
+                                  </code></pre>
+                                  <div class="highlight__panel js-actions-panel">
+                                  <div class="highlight__panel-action js-fullscreen-code-action">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                      <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                  </svg>
+                                  
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                      <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                  </svg>
+                                  
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <p>The results are ordered and so is the time component. This was what was actually expected.</p>
+                                  
+                                  <h2>
+                                    <a name="conclusion" href="#conclusion">
+                                    </a>
+                                    Conclusion
+                                  </h2>
+                                  
+                                  <p>Promise.all() is a super handy tool but because of it's abstraction, it's easy to overlook something like a time component. Keep in mind, the first example ran much quicker than the second, since the timers didn't need to complete before the next result was fired.</p>
+                                  
+                                  <p>So in general, if there is an element of time. e.g. a <code>dateCreated</code> property on the results of a list of Promises or asynchronous actions, consider using a loop instead of Promise.all().</p>
+                                  
+                                  
+                            </div>
+                            <!--Blog Content End-->
+
+                         
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Jquery JS-->
+        <script src="js/jquery.min.js"></script>
+        <!--Plugins JS-->
+        <script src="js/plugins.min.js"></script>
+        <!--Site Main JS-->
+        <script src="js/main.js"></script>
+
+    </body>
+
+<!-- Mirrored from watson-vcard.netlify.app/blog-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Aug 2021 00:12:01 GMT -->
+</html>
