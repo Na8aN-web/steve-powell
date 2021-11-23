@@ -283,7 +283,7 @@
                                   
                                   
                                   <p>The results are ordered and so is the time component. This was what was actually expected.</p>
-                                  
+                                  <div>
                                   <h2>
                                     <a name="conclusion" href="#conclusion">
                                     </a>
@@ -293,7 +293,7 @@
                                   <p>Promise.all() is a super handy tool but because of it's abstraction, it's easy to overlook something like a time component. Keep in mind, the first example ran much quicker than the second, since the timers didn't need to complete before the next result was fired.</p>
                                   
                                   <p>So in general, if there is an element of time. e.g. a <code>dateCreated</code> property on the results of a list of Promises or asynchronous actions, consider using a loop instead of Promise.all().</p>
-                                  
+                        </div>
                                 
                           
                                
